@@ -1,0 +1,100 @@
+:root {
+  --hue: 227;
+  --sat: 78;
+  --light: 27;
+  --bg: hsl(var(--hue), var(--sat)%, var(--light)%);
+  --fg: hsl(10, 78%, 80%);
+}
+
+html {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 600;
+  background-color: var(--bg);
+  color: var(--fg);
+}
+
+body {
+  font-size: 2.5vw;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 5vw;
+  background-color: var(--bg);
+  background-image: url('/img/bluecheese.jpg');
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.container.bg-cat {
+  background-image: url('/img/canhaz.jpg');
+}
+
+.container.bg-runes {
+  background-image: url('/img/runes.png');
+}
+
+.container.bg-ram {
+  background-image: url('/img/ram.gif');
+}
+
+.container.bg-chrome {
+  background-image: url('/img/chrome.jpg');
+}
+
+.container.bg-fail {
+  background-image: url('/img/fail.gif');
+}
+
+.container.bg-thingy {
+  background-image: url('/img/thingy.jpg');
+}
+
+.container.bg-hb {
+  background-image: url('/img/hb.png');
+  background-size: 40vw;
+  background-position: top right;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 15vw;
+  margin-left: -.04em;
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.title.small {
+  font-size: 6vw;
+}
+
+a {
+  color: inherit;
+}
+
+p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 1s;
+}
+
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+  will-change: opacity;
+}

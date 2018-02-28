@@ -10,16 +10,23 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Nuxt.js project' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: '//fonts.googleapis.com/css?family=Source+Code+Pro:600,900' }
     ]
   },
   /*
   ** Customize the progress bar color
   */
-  loading: { color: '#3B8070' },
-  /*
+  loading: false,
+ /*
   ** Build configuration
   */
+
+  transition: {
+    name: 'page',
+    mode: ''
+  },
+
   build: {
     /*
     ** Run ESLint on save
