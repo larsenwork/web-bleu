@@ -62,6 +62,14 @@ body {
   background-image: url('/img/thingy.jpg');
 }
 
+.container.bg-lars {
+  background-image: url('/img/lars.jpg');
+}
+
+.container.bg-corgi {
+  background-image: url('/img/corgi.gif');
+}
+
 .container.bg-hb {
   background-image: url('/img/hb.png');
   background-size: 40vw;

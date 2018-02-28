@@ -1,5 +1,5 @@
 <template>
-  <section class="container">
+  <section class="container bg-corgi">
     <h1 class="title small">
       bluetooth.requestDevice()
     </h1>

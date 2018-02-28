@@ -16,7 +16,7 @@ export default {
     if (process.browser) {
       window.addEventListener('keyup', function(event) {
         if (event.keyCode == 39 && $nuxt._router) {
-          if (parseFloat($nuxt._router.history.current.name) < 19) {
+          if (parseFloat($nuxt._router.history.current.name) < 8) {
             $nuxt._router.push(`${parseFloat($nuxt._router.history.current.name) + 1}`)
           }
         }
